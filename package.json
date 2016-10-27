@@ -1,0 +1,42 @@
+{
+  "private": true,
+  "scripts": {
+    "prod": "gulp --production",
+    "dev": "gulp watch",
+    "test": "ava",
+    "vtest": "ava --verbose"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "bootstrap": "4.0.0-alpha.4",
+    "gulp": "^3.9.1",
+    "jquery": "^3.1.0",
+    "laravel-elixir": "^6.0.0-9",
+    "laravel-elixir-vue-2": "^0.2.0",
+    "laravel-elixir-webpack-official": "^1.0.2",
+    "lodash": "^4.16.2",
+    "vue": "^2.0.1",
+    "vue-resource": "^1.0.3",
+    "vuex": "^2.0.0"
+  },
+  "dependencies": {
+    "tether": "^1.3.7"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-2"
+    ],
+    "plugins": [
+      "espower"
+    ]
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ],
+    "files": [
+      "tests/frontend/js/**/*.js"
+    ]
+  }
+}
